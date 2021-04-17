@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  h2db:
+    image: buildo/h2database
+    ports:
+      - 8082:8082
+      - 9092:9092
+    container_name: h2db
+    volumes:
+       - 'C:\DockerVolumes\H2DB:/h2-data'
