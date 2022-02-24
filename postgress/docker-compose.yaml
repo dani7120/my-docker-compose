@@ -7,6 +7,6 @@ services:
       - '5432:5432'
     container_name: my-postgres-local
     volumes:
-      - 'C:\DockerVolumes\POSTGRES:/var/lib/postgresql/data'
+      - './data:/var/lib/postgresql/data'
     environment:
        - POSTGRES_PASSWORD=test
